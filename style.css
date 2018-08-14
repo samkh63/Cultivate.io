@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* Cultivate CSS Document */
+/* created By Hesam Khoorabeh */
+/* Contact : H.khoorabeh@gmail.com */
+
+#sec1 {
+	width: 100%;
+	height: 100vh;
+	background: #039;
+	background: url(img/Programme8_1920x1080.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	display: table;
+	padding: 2vh;
+}
+#sec1 .content {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.5);
+	padding: 10%;
+}
+#sec1 .content h1 {
+	font-size: 8rem;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+}
+#sec1 .content h2 {
+	font-size: 5rem;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
+}
+#sec2 {
+	width: 100%;
+	height: 100vh;
+	background: #0F6;
+	background: url(img/q9a.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	display: table;
+	padding: 2vh;
+}
+#sec2 .content {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.5);
+	padding: 10%;
+}
+#sec2 .content h1 {
+	font-size: 5rem;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+}
+#sec2 .content h2 {
+	font-size: 3rem;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 5px;
+	font-weight: 300;
+}
+#sec3 {
+	width: 100%;
+	height: 100vh;
+	background: #C00;
+	background: url(img/photographer-logo.png);
+	background-size: contain;
+	background-position: left center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#sec3 .container-fluid .content {
+	display: table-cell;
+	height: 100vh;
+ width:100%  vertical-align: middle;
+	background: rgba(0,0,0,0.5);
+	padding: 2% 5%;
+}
+#sec4 {
+	width: 100%;
+	height: 100vh;
+	background: #96C;
+	background: url(img/sec-4.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	display: table;
+	padding: 2vh;
+}
+#sec4 .content {
+	display: table-cell;
+	vertical-align: middle;
+	background: rgba(0,0,0,0.5);
+	padding: 0%;
+}
+#sec4 .content h1 {
+	font-size: 5rem;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	text-align:center;
+}
+
+
+::-webkit-scrollbar {
+ display: none;
+}
+.navi {
+	right: 1px;
+	top: 50%;
+	z-index: 1002;
+	width: 26px;
+	height: 90px;
+	position: fixed;
+}
+.navi a {
+	border: 2px #FFF solid;
+	border-radius: 180px;
+	width: 22px;
+	height: 22px;
+	display: block;
+	margin: 5px auto;
+	background: #333;
+}
+.spaced {
+	height: 5vh;
+}
+.modal-dialog {
+	width: 98%;
+	margin: 17px auto;
+}
+.modal-content {
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+}
+.modal-body {
+	position: relative;
+	padding: 0px;
+}
+.close {
+	/* float: right; */
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=20);
+	opacity: 1;
+	position: absolute;
+	right: 15px;
+	z-index: 100;
+}
+/*-----------contact form ---------------*/
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+}
+textarea {
+	outline: none;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+}
+textarea:focus, input:focus {
+	border:1px solid #000;
+}
+ input:focus::-webkit-input-placeholder {
+color:transparent;
+}
+input:focus:-moz-placeholder {
+color:transparent;
+}
+input:focus::-moz-placeholder {
+color:transparent;
+}
+input:focus:-ms-input-placeholder {
+color:transparent;
+}
+ textarea:focus::-webkit-input-placeholder {
+color:transparent;
+}
+textarea:focus:-moz-placeholder {
+color:transparent;
+}
+textarea:focus::-moz-placeholder {
+color:transparent;
+}
+textarea:focus:-ms-input-placeholder {
+color:transparent;
+}
+ input::-webkit-input-placeholder {
+color: #adadad;
+}
+input:-moz-placeholder {
+color: #adadad;
+}
+input::-moz-placeholder {
+color: #adadad;
+}
+input:-ms-input-placeholder {
+color: #adadad;
+}
+ textarea::-webkit-input-placeholder {
+color: #adadad;
+}
+textarea:-moz-placeholder {
+color: #adadad;
+}
+textarea::-moz-placeholder {
+color: #adadad;
+}
+textarea:-ms-input-placeholder {
+color: #adadad;
+}
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+	font-family: 'Raleway', sans-serif;
+}
+button:hover {
+	cursor: pointer;
+}
+iframe {
+	border: none !important;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.wrap-contact100 {
+	max-width: 960px;
+	background: #ffffffdb;
+	border-radius: 2px;
+	padding: 66px 115px 59px 115px;
+	position: relative;
+}
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contact100-form-title {
+	display: block;
+	width: 100%;
+	font-family: Raleway-Black;
+	font-size: 30px;
+	color: #333333;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: left;
+	padding-bottom: 32px;
+}
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+	width: 100%;
+	position: relative;
+	background-color: transparent;
+	margin-bottom: 35px;
+}
+.rs1-wrap-input100 {
+	width: calc((100% - 30px) / 2);
+}
+.label-input100 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: #555555;
+	line-height: 1.5;
+}
+.input100 {
+	display: block;
+	width: 100%;
+	background: #f2f2f2;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #686868;
+	line-height: 1.2;
+	padding: 0 28px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	margin-top: 10px;
+}
+/*---------------------------------------------*/
+input.input100 {
+	height: 62px;
+}
+textarea.input100 {
+	min-height: 162px;
+	padding-top: 19px;
+	padding-bottom: 13px;
+}
+.input100:focus {
+	background: #c3c3c3;
+	color: black;
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 5px;
+}
+.wrap-contact100-form-btn {
+	display: block;
+	position: relative;
+	z-index: 1;
+	border-radius: 2px;
+	overflow: hidden;
+}
+.contact100-form-bgbtn {
+	position: absolute;
+	z-index: -1;
+	width: 300%;
+	height: 100%;
+	background: #df2351;
+	background: -webkit-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+	background: -o-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+	background: -moz-linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+	background: linear-gradient(right, #2f91ff, #00c513, #2f91ff, #00c513);
+	top: 0;
+	left: -100%;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.contact100-form-btn {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+	min-width: 150px;
+	height: 62px;
+	font-family: Raleway-Bold;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+.wrap-contact100-form-btn:hover .contact100-form-bgbtn {
+	left: 0;
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cultivate Photography</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,300i,400,500,700" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<script>
+$(document).ready(function(e) {
+    // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="navi"> <a href="#sec1"></a> <a href="#sec2"></a> <a href="#sec3"></a> <a href="#sec4"></a> </div>
+<section id="sec1">
+  <div class="container content" align="center">
+    <h1>Creative Photographer</h1>
+    <h2>Landscape and Nature</h2>
+  </div>
+</section>
+<section id="sec2">
+  <div class="container content" align="center">
+    <h1>Creative Photographer Portfolio</h1>
+    <h2>Check Our Works</h2>
+    <div class="spaced"></div>
+    <div class="col-lg-4 col-md-6 col-sm-12"> <img src="img/q9a.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" /> </div>
+    <div class="col-lg-4 col-md-6 col-sm-12"> <img src="img/sec-3.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" /> </div>
+    <div class="col-lg-4 col-md-6 col-sm-12"> <img src="img/sec-4.jpg" class="img-responsive" data-toggle="modal" data-target="#myModal" /> </div>
+  </div>
+</section>
+<section id="sec3">
+  <div class="container-fluid">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 " > </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 content">
+      <h1>I AM PHOTOGRAPHER</h1>
+      <h2>in LandScape</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </div>
+</section>
+<section id="sec4">
+  <div class="content">
+  	<h1>Drop Us a Line</h1>
+    <div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+      <div class="wrap-contact100">
+        <form class="contact100-form validate-form">
+          <span class="contact100-form-title"> Get in Touch </span>
+          <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required"> <span class="label-input100">Tell us your name *</span>
+            <input class="input100" type="text" name="name" placeholder="Enter your name">
+          </div>
+          <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz"> <span class="label-input100">Enter your email *</span>
+            <input class="input100" type="text" name="email" placeholder="Enter your email">
+          </div>
+          <div class="wrap-input100"> <span class="label-input100">Your Website</span>
+            <input class="input100" type="text" name="web" placeholder="http://">
+          </div>
+          <div class="wrap-input100 validate-input" data-validate = "Message is required"> <span class="label-input100">Message</span>
+            <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+          </div>
+          <div class="container-contact100-form-btn">
+            <div class="wrap-contact100-form-btn">
+              <div class="contact100-form-bgbtn"></div>
+              <button class="contact100-form-btn"> Submit </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <span class="contact100-more"> Call us on +001 345 6178 </span> </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog"> 
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body container-fluid">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active"> <img src="img/Programme8_1920x1080.jpg" alt="Los Angeles"> </div>
+            <div class="item"> <img src="img/q9a.jpg" alt="Chicago"> </div>
+            <div class="item"> <img src="img/sec-3.jpg" alt="New York"> </div>
+          </div>
+          
+          <!-- Left and right controls --> 
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
